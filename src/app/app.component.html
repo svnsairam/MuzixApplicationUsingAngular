@@ -4,13 +4,13 @@
          <nav class='navbar navbar-expand navbar-light bg-light'>
           <a class='navbar-brand'>{{pageTitle}}</a>
           <ul class='nav nav-pills'>
-            <li><a class='nav-link'>Home</a></li>
-            <li><a class='nav-link' routerLinkActive='active'>Track List</a></li>
+            <li><a class='nav-link' routerLinkActive='active' [routerLink]="['/']">Home</a></li>
+            <li><a class='nav-link' routerLinkActive='active' [routerLink]="['/tracks']">ShowTracks</a></li>
+            <li><a  class='nav-link' routerLinkActive='active' [routerLink]="['/savedTracks']">MySavedTracks</a></li>
           </ul>
-      </nav>
+       </nav>
     </div>
       <div class="card-body"><h1>Welcome to {{title}}</h1></div> 
-      <div class="card-footer">Footer</div>
     </div>
 </div>
 <div class='container'>
