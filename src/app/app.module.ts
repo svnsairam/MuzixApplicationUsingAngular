@@ -9,6 +9,7 @@ import { FormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 import { HttpClientModule } from '@angular/common/http';
 import { SavedTrackCardComponent } from './saved-track-card/saved-track-card.component';
+import { HomePageComponent } from './home-page/home-page.component';
 
 @NgModule({
   declarations: [
@@ -16,6 +17,7 @@ import { SavedTrackCardComponent } from './saved-track-card/saved-track-card.com
     SearchComponent,
     TrackCardComponent,
     SavedTrackCardComponent,
+    HomePageComponent,
   ],
   imports: [
     BrowserModule,
@@ -25,7 +27,7 @@ import { SavedTrackCardComponent } from './saved-track-card/saved-track-card.com
     RouterModule.forRoot([
       { path: 'tracks', component: TrackCardComponent },
       { path:'savedTracks', component:SavedTrackCardComponent},
-      { path:'*', component:AppComponent},
+      { path:'welcome', component:HomePageComponent},
     ])
   ],
   providers: [],
